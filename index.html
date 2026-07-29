@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux APT Repository - vpn-cli</title>
+    <style>
+        body { font-family: monospace; background: #121212; color: #00ff66; padding: 20px; line-height: 1.6; }
+        .card { background: #1e1e1e; border: 1px solid #333; padding: 20px; border-radius: 8px; max-width: 650px; margin: auto; }
+        h1 { color: #fff; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        a { color: #00e5ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background: #000; padding: 12px; border-radius: 5px; overflow-x: auto; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>VPN-CLI Termux APT Repository</h1>
+        <p>Official APT package repository for <strong>vpn-cli</strong> on Termux.</p>
+
+        <h3>Quick Install (Termux)</h3>
+        <pre>curl -sL https://jjjm03299-wq.github.io/termux-apt-repo/vpn-cli.list -o $PREFIX/etc/apt/sources.list.d/vpn-cli.list
+pkg update
+pkg install vpn-cli</pre>
+
+        <h3>Direct Downloads</h3>
+        <ul>
+            <li><a href="vpn-cli.list">Download vpn-cli.list</a></li>
+            <li><a href="binary-all/vpn-cli_1.0.0_all.deb">Download vpn-cli_1.0.0_all.deb</a></li>
+            <li><a href="binary-all/Packages">Download Packages Index</a></li>
+        </ul>
+    </div>
+</body>
+</html>

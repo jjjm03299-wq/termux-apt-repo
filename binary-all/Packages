@@ -1,0 +1,14 @@
+Package: vpn-cli
+Version: 1.0.0
+Architecture: all
+Maintainer: njdjdjd <dodi66412@gmail.com>
+Depends: python
+Filename: binary-all/vpn-cli_1.0.0_all.deb
+Size: 627564
+MD5sum: 970ebd396df08d41a6e48b3853bc116a
+SHA1: 795b97cb7c0b9d76c2739c8a824fe502bb3f9761
+SHA256: a7bd254533fe8b1a20d79e04d0fba1df2f3e7cd5c68f7d6f232f6d6ffe3fe695
+Section: net
+Priority: optional
+Description: VPN CLI client compiled and packaged for Termux APT repository.
+
