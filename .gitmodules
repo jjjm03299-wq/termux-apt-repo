@@ -1,0 +1,3 @@
+[submodule "apt-repo"]
+	path = apt-repo
+	url = https://github.com/jjjm03299-wq/termux-apt-repo.git
