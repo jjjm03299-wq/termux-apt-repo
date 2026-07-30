@@ -3,96 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termux APT Repository - vpn-cli</title>
+    <title>Termux APT Repository (GPG Signed)</title>
     <style>
         :root {
-            --bg-color: #0f172a;
+            --bg: #0f172a;
             --card-bg: #1e293b;
-            --text-main: #f8fafc;
+            --text: #f8fafc;
             --text-muted: #94a3b8;
             --accent: #38bdf8;
-            --code-bg: #020617;
-            --border: #334155;
+            --accent-green: #4ade80;
+            --code-bg: #090d16;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
             margin: 0;
-            padding: 24px;
+            padding: 2rem 1rem;
             display: flex;
             justify-content: center;
         }
+
         .container {
-            max-width: 680px;
+            max-width: 720px;
             width: 100%;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 32px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1rem;
+        }
+
         h1 {
-            margin-top: 0;
-            font-size: 1.5rem;
             color: var(--accent);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 12px;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.8rem;
         }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(74, 222, 128, 0.1);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
         p {
-            line-height: 1.6;
+            margin: 0 0 1rem 0;
             color: var(--text-muted);
         }
-        h2 {
-            font-size: 1.1rem;
-            margin-top: 24px;
-            color: var(--text-main);
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: var(--text);
+        }
+
         pre {
             background-color: var(--code-bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 16px;
+            padding: 1rem;
+            border-radius: 6px;
             overflow-x: auto;
-            color: #4ade80;
-            font-size: 0.9rem;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
+            font-family: "Fira Code", Consolas, Monaco, monospace;
+            font-size: 0.88rem;
+            color: var(--accent);
             margin: 0;
         }
-        li {
-            margin-bottom: 8px;
+
+        code {
+            font-family: "Fira Code", Consolas, Monaco, monospace;
+            color: var(--accent);
         }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2rem;
+        }
+
         a {
             color: var(--accent);
             text-decoration: none;
-            font-weight: 500;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>VPN CLI Termux Repository</h1>
-        <p>Custom APT repository for installing and managing <code>vpn-cli</code> directly inside Termux.</p>
 
-        <h2>Quick Install (Termux)</h2>
-        <p>Add this repository source to your Termux setup and install the package:</p>
-        <pre>curl -sL https://jjjm03299-wq.github.io/termux-apt-repo/vpn-cli.list -o $PREFIX/etc/apt/sources.list.d/vpn-cli.list
-pkg update
-pkg install vpn-cli</pre>
+<div class="container">
+    <header>
+        <span class="badge">🔒 GPG Signed Repository</span>
+        <h1>Termux APT Repository</h1>
+        <p>Custom software packages for Termux Android environment signed with GPG key.</p>
+    </header>
 
-        <h2>Direct File Downloads</h2>
-        <ul>
-            <li>📄 <a href="vpn-cli.list">Download vpn-cli.list (APT Source)</a></li>
-            <li>📦 <a href="binary-all/vpn-cli_1.0.0_all.deb">Download vpn-cli_1.0.0_all.deb (DEB Package)</a></li>
-            <li>📋 <a href="binary-all/Packages">Download Packages Index</a></li>
-            <li>🗜️ <a href="binary-all/Packages.gz">Download Packages.gz Archive</a></li>
-        </ul>
-    </div>
+    <main>
+        <!-- Automated One-Line Install -->
+        <div class="card">
+            <h2>🚀 Quick Automated Install</h2>
+            <p>Run this single command in Termux to automatically add the source, update APT, and install <code>vpn-cli</code>:</p>
+            <pre><code>curl -sL https://jjjm03299-wq.github.io/termux-apt-repo/vpn-cli.list -o $PREFIX/etc/apt/sources.list.d/vpn-cli.list && pkg update && pkg install vpn-cli</code></pre>
+        </div>
+
+        <!-- Manual Step-by-Step Instructions -->
+        <div class="card">
+            <h2>📋 Manual Step-by-Step Setup</h2>
+            <p><strong>Step 1:</strong> Download the APT sources list file (pre-configured with <code>KEY.gpg</code> verification):</p>
+            <pre><code>curl -sL https://jjjm03299-wq.github.io/termux-apt-repo/vpn-cli.list -o $PREFIX/etc/apt/sources.list.d/vpn-cli.list</code></pre>
+
+            <p style="margin-top: 1rem;"><strong>Step 2:</strong> Update APT package database:</p>
+            <pre><code>pkg update</code></pre>
+
+            <p style="margin-top: 1rem;"><strong>Step 3:</strong> Install package:</p>
+            <pre><code>pkg install vpn-cli</code></pre>
+        </div>
+
+        <!-- GPG Metadata Section -->
+        <div class="card">
+            <h2>🔑 Security & Verification</h2>
+            <p>Public Key File: <a href="KEY.gpg" target="_blank">KEY.gpg</a></p>
+            <p>Signatures are validated via <code>InRelease</code> / <code>Release.gpg</code> using key ID associated with <code>dodi66412@gmail.com</code>.</p>
+        </div>
+
+        <!-- Available Packages List -->
+        <div class="card">
+            <h2>📦 Available Packages</h2>
+            <ul>
+                <li><strong>vpn-cli</strong> - Terminal-based VPN control client for Termux.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Termux VPN Repository • Hosted on GitHub Pages</p>
+    </footer>
+</div>
+
 </body>
 </html>
