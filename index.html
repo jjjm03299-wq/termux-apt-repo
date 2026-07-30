@@ -5,29 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termux APT Repository - vpn-cli</title>
     <style>
-        body { font-family: monospace; background: #121212; color: #00ff66; padding: 20px; line-height: 1.6; }
-        .card { background: #1e1e1e; border: 1px solid #333; padding: 20px; border-radius: 8px; max-width: 650px; margin: auto; }
-        h1 { color: #fff; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        a { color: #00e5ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        pre { background: #000; padding: 12px; border-radius: 5px; overflow-x: auto; color: #fff; }
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --code-bg: #020617;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+        }
+        p {
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+        h2 {
+            font-size: 1.1rem;
+            margin-top: 24px;
+            color: var(--text-main);
+        }
+        pre {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            overflow-x: auto;
+            color: #4ade80;
+            font-size: 0.9rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>VPN-CLI Termux APT Repository</h1>
-        <p>Official APT package repository for <strong>vpn-cli</strong> on Termux.</p>
+    <div class="container">
+        <h1>VPN CLI Termux Repository</h1>
+        <p>Custom APT repository for installing and managing <code>vpn-cli</code> directly inside Termux.</p>
 
-        <h3>Quick Install (Termux)</h3>
+        <h2>Quick Install (Termux)</h2>
+        <p>Add this repository source to your Termux setup and install the package:</p>
         <pre>curl -sL https://jjjm03299-wq.github.io/termux-apt-repo/vpn-cli.list -o $PREFIX/etc/apt/sources.list.d/vpn-cli.list
 pkg update
 pkg install vpn-cli</pre>
 
-        <h3>Direct Downloads</h3>
+        <h2>Direct File Downloads</h2>
         <ul>
-            <li><a href="vpn-cli.list">Download vpn-cli.list</a></li>
-            <li><a href="binary-all/vpn-cli_1.0.0_all.deb">Download vpn-cli_1.0.0_all.deb</a></li>
-            <li><a href="binary-all/Packages">Download Packages Index</a></li>
+            <li>📄 <a href="vpn-cli.list">Download vpn-cli.list (APT Source)</a></li>
+            <li>📦 <a href="binary-all/vpn-cli_1.0.0_all.deb">Download vpn-cli_1.0.0_all.deb (DEB Package)</a></li>
+            <li>📋 <a href="binary-all/Packages">Download Packages Index</a></li>
+            <li>🗜️ <a href="binary-all/Packages.gz">Download Packages.gz Archive</a></li>
         </ul>
     </div>
 </body>

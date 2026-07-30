@@ -1,0 +1,14 @@
+Origin: Termux-VPN-CLI
+Label: Termux VPN Repository
+Suite: stable
+Codename: stable
+Date: Thu, 30 Jul 2026 02:00:41 +0000
+Architectures: all
+Components: main
+Description: Termux APT repository for vpn-cli
+MD5Sum:
+ da0e4a646b45cdc1ce6989302fa46b20 426 Packages
+ 787839462e8f052de7913d7c9a2891e9 349 Packages.gz
+SHA256:
+ c02e43a31367f43c50db868fbea9bbc1a475fe58788b47ab2120778e4e483118 426 Packages
+ fd4d5c3aa33efaaa4fa0cc13b6ef53ebc5c86e2bc6ae79e411698e29a6ec5ccb 349 Packages.gz
