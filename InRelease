@@ -1,0 +1,34 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Termux-VPN-CLI
+Label: Termux VPN Repository
+Suite: stable
+Codename: stable
+Date: Thu, 30 Jul 2026 02:10:15 +0000
+Architectures: all
+Components: main
+Description: Termux APT repository for vpn-cli
+MD5Sum:
+ da0e4a646b45cdc1ce6989302fa46b20 426 Packages
+ aae47e7cd44a978c05832cf402c4a076 349 Packages.gz
+SHA256:
+ c02e43a31367f43c50db868fbea9bbc1a475fe58788b47ab2120778e4e483118 426 Packages
+ 28af076d8f9c23455ebf951d5aa8809a911ba59c80e401f675122bd283f096aa 349 Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCAA5FiEEYH+ooKIi3DbC0fDj1rtXL6fKuoQFAmpqs7kbFIAAAAAABAAO
+bWFudTIsMi41KzEuMTEsMywyAAoJENa7Vy+nyrqE5dkP/iRApy15h/xHzEOMAyJo
+YcTTH6vuFeuhygFxXAKk5nPM7GNjSOTfaoIiqWoxh5LYzP9SaLLgSy2Iju4f80dx
+trvBeUdykEv0YI7+VYDV+pFiTv26ZjJApNAYXxs4uBnPLFODgBUVPFQ+FGgNEGYa
+fJS3wkB2JuZHtPbk9LQbEbToutbb/qq320P7j0fif4zsJQcHCF6r3XWlG8AkIvjb
+T9KAyudpmmJHTasNpI7G6yDXZSZ2re1Q4ZO6LCUC6OYywRk8H8G9NHNk/UtXCBZL
+bKPP1lAcwwl6boIEmBKlsoGk/1jep3f+qBeJ0bawLgsInDkh9hxa54SjHdnT7DS9
+LjhIn5deroXahkBKo9HQFw4+lRaMufdYOdMiRuxlDg+TB6vTnRRzSuVhVXowMSR1
+V+a+VmcaaFIU131tR5DlXsy4/Q0XDET6lDm7r/dXOb1kNM5I/8ZA3yyUtTgtT2pn
+tIGLqsnXfuTJwlEUHRrzykhfunUBunZEkAVcDxAq0B/hFfwqR4XU4U929+Za28bS
+CgKH5UUQx9IEssAtfsI1h0j3l2IDV29fwxd6sTbgtpvz6/DODfas0Dcy4UytZUsx
+m+b7X2HRO1qGg140mUU7r3PJlkvTg1ZitdBqp0qDT4FnitjxSN6QKAaaNTcm22fz
+pF7bbX0OXQqQjN5aW7hdbG5y
+=LIko
+-----END PGP SIGNATURE-----
